@@ -1,174 +1,230 @@
-
 body{
-  position: relative;
-}
-
-header#home{
-  background-image:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.7)), url("hero-2.webp");
-  background-size: cover;
-  background-position: center;
-  width:100%;
-  padding: 20%;
-  color: white;
-  text-align: center;
-  text-shadow: 2px 2px 5px rgb(80, 0, 0);
-}
-
-.card{
-  width: 300px;
-  display: inline-block;
-  margin: 10px;
-}
-
-.card-img-top{
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.card-footer .price{
-  position: absolute;
-  right: 20px;
-}
-
-section {
-  padding: 40px 0;
-}
-
-#properties-target,
-#testimonials-target,
-#about-us-target{
-  position: relative;
-  top:-100px;
-}
-
-.scroll-top .navbar{
-  background-color: transparent !important;
-}
-
-.carousel-item img{
-  object-fit:cover;
-  object-position: center;
-  height: 50vh;
-  overflow: hidden;
-}
-
-.carousel-item: after{
-  content:"";
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background:rgba(0,0,0,.3);
-}
-
-.carousel-caption{
-  z-index: 1;
-}
-
-footer {
-  background-color: black;
-  color: white;
-  bottom: 0;
-  width: 100vw;
-  font-size: 16px;
-}
-footer * {
-  box-sizing: border-box;
-  border: none;
-  outline: none;
-}
-
-.row {
-  padding: 1em 1em;
-}
-.row.primary {
-  display: grid;
-  grid-template-columns: 3fr 2fr 4fr;
-  align-items: stretch;
-}
-.column {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 0 2em;
-  min-height: 15em;
-}
-h3 {
-  width: 100%;
-  text-align: left;
-  color: white;
-  font-size: 1.4em;
-  white-space: nowrap;
-}
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-}
-li:not(:first-child) {
-  margin-top: 0.8em;
-}
-ul li a {
-  color: #a7a7a7;
-  text-decoration: none;
-}
-ul li a:hover {
-  color: #0081A7;
-}
-.about p {
-  text-align: justify;
-  line-height: 2;
-  margin: 0;
-}
-input,
-button {
-  font-size: 1em;
-  padding: 1em;
-  width: 100%;
-  border-radius: 5px;
-  margin-bottom: 5px;
-}
-button {
-  background-color: #0D5C75;
-  color: #ffffff;
-}
-div.social {
-  display: flex;
-  justify-content: space-around;
-  font-size: 2.4em;
-  flex-direction: row;
-  margin-top: .5em;
-}
-.social i {
-  color: #bac6d9;
-}
-
-.copyright {
-  padding: 0.3em 1em;
-  background-color: #25262e;
-}
-.footer-menu{
-  float: left;
-    margin-top: 10px;
-}
-.footer-menu a{
-  color: #cfd2d6;
-  padding: 6px;
-  text-decoration: none;
-}
-.footer-menu a:hover, .social i:hover{
-  color: #0081A7;
-}
-.copyright p {
-  font-size: 0.9em;
-  text-align: right;
-} 
-@media screen and (max-width: 850px) {
-  .row.primary {
-    grid-template-columns: 1fr;
+    position: relative;
   }
-}
+  
+  .navbar {
+    font-family: proxima-nova, arial, sans-serif;
+    font-weight: 600;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .nav-link {
+    color: rgb(28, 28, 28);
+  }
+
+  #nav-logo{
+    font-family: Tilt Prism; 
+    font-size: 40px;
+    font-weight: 200;
+  }
+  #nav-logo:hover{
+    color:#abafd1
+  }
+
+  .scroll-top .navbar{
+    background-color: transparent !important;
+  }
+
+  #sign-in-link {
+    letter-spacing: 0.0875rem;
+    color: white;
+    font-family:Ysabeau Infant ;
+    font-weight: 700;
+  }
+
+  #sign-in-link:hover{
+    color:#abafd1
+  }
+  
+  
+  header#home{
+    background-image:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.7)), url("resort/hero-2.webp");
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    padding: 17%;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(80, 0, 0);
+  }
+  #header-book-button{
+    width: 20%;
+  }
+
+  #search-area {
+    margin-left: 0px;
+    margin-top: -8rem;
+    padding: 2.5rem;
+    position: relative;
+    z-index: 4;
+    height: auto;
+    width: 100%;
+    border-radius: 0.375rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1.25rem;
+  }
+  
+  #search-homes-button {
+    width: 100%;
+    font-family: proxima-nova, arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.09rem;
+  }
+  
+  
+  .card{
+    width: 300px;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .card-img-top{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-footer .price{
+    position: absolute;
+    right: 20px;
+  }
+  
+  section {
+    padding: 40px 0;
+  }
+  
+  #properties-target,
+  #testimonials-target,
+  #about-us-target{
+    position: relative;
+    top:-100px;
+  }
+  
+  .carousel-item img{
+    object-fit:cover;
+    object-position: center;
+    height: 50vh;
+    overflow: hidden;
+  }
+  
+  .carousel-item: after{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,.3);
+  }
+  
+  .carousel-caption{
+    z-index: 1;
+  }
+  
+  footer {
+    background-color: black;
+    color: white;
+    bottom: 0;
+    width: 100vw;
+    font-size: 16px;
+  }
+  footer * {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+  }
+  
+  .row {
+    padding: 1em 1em;
+  }
+  .row.primary {
+    display: grid;
+    grid-template-columns: 3fr 2fr 4fr;
+    align-items: stretch;
+  }
+  .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    min-height: 15em;
+  }
+  h3 {
+    width: 100%;
+    text-align: left;
+    color: white;
+    font-size: 1.4em;
+    white-space: nowrap;
+  }
+  /*ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }*/
+  /*i:not(:first-child) {
+    margin-top: 0.8em;
+  }*/
+
+  ul li a {
+    color: #a7a7a7;
+    text-decoration: none;
+  }
+  ul li a:hover {
+    color: #0081A7;
+  }
+  .about p {
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
+  }
+  input,
+  button {
+    font-size: 1em;
+    padding: 1em;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  button {
+    background-color: #0D5C75;
+    color: #ffffff;
+  }
+  div.social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.4em;
+    flex-direction: row;
+    margin-top: .5em;
+  }
+  .social i {
+    color: #bac6d9;
+  }
+  
+  .copyright {
+    padding: 0.3em 1em;
+    background-color: #25262e;
+  }
+  .footer-menu{
+    float: left;
+      margin-top: 10px;
+  }
+  .footer-menu a{
+    color: #cfd2d6;
+    padding: 6px;
+    text-decoration: none;
+  }
+  .footer-menu a:hover, .social i:hover{
+    color: #0081A7;
+  }
+  .copyright p {
+    font-size: 0.9em;
+    text-align: right;
+  } 
+  @media screen and (max-width: 850px) {
+    .row.primary {
+      grid-template-columns: 1fr;
+    }
+  }
